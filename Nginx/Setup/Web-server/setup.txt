@@ -1,4 +1,5 @@
 nginx config setup :
+terminal : bash
 cd /var/www
 
 cd [site]
