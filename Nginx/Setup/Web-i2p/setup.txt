@@ -165,7 +165,7 @@ sudo nano assets/css/index.css
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} */
 
 cat assets/css/index.css
 
@@ -179,7 +179,7 @@ sudo nano assets/css/page-1/index.css
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} */
 
 cat assets/css/page-1/index.css
 
@@ -193,7 +193,7 @@ sudo nano assets/css/page-2/index.css
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} */
 
 cat assets/css/page-2/index.css
 
@@ -207,7 +207,7 @@ sudo nano assets/css/page-3/index.css
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} */
 
 cat assets/css/page-3/index.css
 
@@ -224,7 +224,7 @@ sudo nano assets/js/index.js
 ^ config :
 // template default
 // document.addEventListener("DOMContentLoaded", () => { }); // isi codenya bebas
-// hapus komentarnya "//" dahulu
+// delete the comment "//" first
 
 cat assets/js/index.js
 
@@ -234,7 +234,7 @@ sudo nano assets/js/page-1/index.js
 ^ config :
 // template default
 // document.addEventListener("DOMContentLoaded", () => { }); // isi codenya bebas
-// hapus komentarnya "//" dahulu
+// delete the comment "//" first
 
 cat assets/js/page-1/index.js
 
@@ -244,7 +244,7 @@ sudo nano assets/js/page-2/index.js
 ^ config :
 // template default
 // document.addEventListener("DOMContentLoaded", () => { }); // isi codenya bebas
-// hapus komentarnya "//" dahulu
+// delete the comment "//" first
 
 cat assets/js/page-2/index.js
 
@@ -254,7 +254,7 @@ sudo nano assets/js/page-3/index.js
 ^ config :
 // template default
 // document.addEventListener("DOMContentLoaded", () => { }); // isi codenya bebas
-// hapus komentarnya "//" dahulu
+// delete the comment "//" first
 
 cat assets/js/page-3/index.js
 
