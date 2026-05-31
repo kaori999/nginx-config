@@ -1,0 +1,79 @@
+nginx installation setup :
+sudo apt update
+sudo apt install nginx
+sudo apt install nginx-full
+
+apt-cache policy nginx
+
+nginx config setup :
+sudo systemctl enable nginx
+sudo systemctl start nginx
+
+cd /var/www
+
+sudo mkdir -p [site] // buat base folder untuk website
+
+sudo touch [site]/index.html
+
+sudo chown -R [user]:[user] /var/www // ubah permission "opsional"
+
+ls -ld /var/www/ // cek permission
+
+ls -l /var/www/ // cek daftar file permission
+ls -l /var/www/[site]/
+
+cd /etc/nginx/sites-available
+
+sudo nano [site]
+^ config :
+server {
+    listen 127.0.0.1:[port]; // default 3000 atau bebas
+    server_name [domain name]; // gunakan "_" jika belum mempunyai dns atau domain
+
+    root /var/www/[site];
+    index index.html;
+
+    access_log /var/log/nginx/[site]_access.log;
+    error_log  /var/log/nginx/[site]_error.log;
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
+
+    location ~ /\. {
+        deny all;
+    }
+}
+
+cat [site]
+
+sudo nginx -t
+
+sudo ln -s /etc/nginx/sites-available/[site] /etc/nginx/sites-enabled/
+
+ls -l /etc/nginx/sites-available/
+ls -l /etc/nginx/sites-enabled/
+
+ls /etc/nginx/sites-available/
+ls /etc/nginx/sites-enabled/
+
+sudo systemctl reload nginx
+sudo systemctl restart nginx
+sudo systemctl status nginx
+
+sudo ss -tulnp | grep :80
+sudo ss -tulnp | grep nginx
+
+sudo curl http://127.0.0.1
+sudo curl http://127.0.0.1:[port]
+
+sudo curl http://localhost
+sudo curl http://localhost:[port]
+
+ls -l /var/log/nginx
+ls -ld /var/log/nginx
+
+sudo cat /var/log/nginx/[site]_error.log
+sudo cat /var/log/nginx/[site]_access.log
+
+

@@ -1,0 +1,12 @@
+nginx config setup :
+ps aux | grep nginx
+
+// digunakan jika attach ke systemd "system-path"
+sudo systemctl stop nginx // tambahkan perintah "2>/dev/null" jika ingin mode purge
+sudo systemctl reset-failed nginx
+sudo systemctl disable nginx // tambahkan perintah "2>/dev/null" jika ingin mode purge
+
+sudo kill [id] // cara paksa pertama "tidak disarankan"
+sudo kill -9 [id] // cara paksa kedua "tidak disarankan"
+
+sudo pkill -f [system] // cara paksa jika program tetap berjalan "tidak disarankan"

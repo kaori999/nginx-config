@@ -1,0 +1,30 @@
+nginx config setup :
+sudo apt purge nginx
+sudo apt purge nginx-common
+sudo apt purge nginx-full
+
+sudo apt autoremove
+
+// dikhususkan jika ingin reset semua konfig utama nginx
+sudo rm -rf /etc/nginx
+sudo rm -rf /var/log/nginx
+
+// dikhususkan jika ingin reset semua data atau struktur webserver
+sudo find /var/www -mindepth 1 ! -name 'html' -exec rm -rf {} +
+
+// dikhususkan jika ingin reset semua konfig webserver
+sudo find /etc/nginx/sites-available -type f ! -name 'default' -delete // menghapus semua konfig webserver kecuali config "default"
+sudo find /etc/nginx/sites-enabled -type f ! -name 'default' -delete // menghapus semua konfig webserver kecuali config "default"
+
+// dikhususkan jika ingin reset individu konfig webserver
+sudo rm /etc/nginx/sites-enabled/[site]
+sudo rm /etc/nginx/sites-available/[site]
+
+// cek kembali sisa depedensi nginx
+systemctl list-unit-files | grep nginx
+
+find / -name "*nginx*" 2>/dev/null
+
+dpkg -l | grep nginx
+
+

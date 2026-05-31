@@ -1,0 +1,268 @@
+nginx config setup :nginx config setup :
+cd /var/www/i2p-page
+
+cd site-i2p-[id]
+
+sudo nano index.html
+^ config :
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I2P Node</title>
+    <link rel="stylesheet" href="/assets/css/index.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Webserver-I2P Node</h1>
+    <nav>
+        <a href="/">Home</a> |
+        <a href="/page-1/">About</a> |
+        <a href="/page-2/">Projects</a> |
+        <a href="/page-3/">Services</a> |
+    </nav>
+</header>
+
+<hr>
+
+<main>
+
+<section>
+    <h2></h2>
+    <p></p>
+</section>
+
+<hr>
+
+<section>
+    <h2>About</h2>
+    <p> welcome webserver i2p<br></p>
+</section>
+
+<hr>
+
+<section>
+    <h2></h2>
+    <ul>
+        <li><a href="/"></a></li>
+        <li><a href="/"></a></li>
+        <li><a href="/"></a></li>
+    </ul>
+</section>
+</main>
+
+<hr>
+
+<footer>
+    <p>Powered by i2p</p>
+</footer>
+
+<script src="/assets/js/index.js"></script>
+
+</body>
+</html>
+
+cat index.html
+
+sudo mkdir -p page-1
+
+sudo nano page-1/index.html
+^ config :
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="/assets/css/page-1/index.css">
+</head>
+<body>
+
+<h1>About</h1>
+<p></p>
+
+<a href="/">Back to Home</a>
+
+<script src="/assets/js/page-1/index.js"></script>
+
+</body>
+</html>
+
+cat page-1/index.html
+
+sudo mkdir -p page-2
+
+sudo nano page-2/index.html
+^ config :
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="/assets/css/page-2/index.css">
+</head>
+<body>
+
+<h1>Projects</h1>
+<p></p>
+
+<a href="/">Back to Home</a>
+
+<script src="/assets/js/page-2/index.js"></script>
+
+</body>
+</html>
+
+cat page-2/index.html
+
+sudo mkdir -p page-3
+
+sudo nano page-3/index.html
+^ config :
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="/assets/css/page-3/index.css">
+</head>
+<body>
+
+<h1>Services</h1>
+<p></p>
+
+<a href="/">Back to Home</a>
+
+<script src="/assets/js/page-3/index.js"></script>
+
+</body>
+</html>
+
+cat page-3/index.html
+
+ls -ld
+
+ls -l page-1
+ls -l page-2
+ls -l page-3
+ls -l
+
+sudo mkdir -p assets
+
+sudo mkdir -p assets/css
+
+sudo nano assets/css/index.css
+^ config :
+/* Body default */
+
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+cat assets/css/index.css
+
+sudo mkdir -p assets/css/page-1
+
+sudo nano assets/css/page-1/index.css
+^ config :
+/* Body default */
+
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+cat assets/css/page-1/index.css
+
+sudo mkdir -p assets/css/page-2
+
+sudo nano assets/css/page-2/index.css
+^ config :
+/* Body default */
+
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+cat assets/css/page-2/index.css
+
+sudo mkdir -p assets/css/page-3
+
+sudo nano assets/css/page-3/index.css
+^ config :
+/* Body default */
+
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+cat assets/css/page-3/index.css
+
+ls -ld assets/css/
+
+ls -l assets/css/page-1
+ls -l assets/css/page-2
+ls -l assets/css/page-3
+ls -l assets/css/
+
+sudo mkdir -p assets/js
+
+sudo nano assets/js/index.js
+^ config :
+// template default
+// document.addEventListener("DOMContentLoaded", () => { }); // isi codenya bebas
+// hapus komentarnya "//" dahulu
+
+cat assets/js/index.js
+
+sudo mkdir -p assets/js/page-1
+
+sudo nano assets/js/page-1/index.js
+^ config :
+// template default
+// document.addEventListener("DOMContentLoaded", () => { }); // isi codenya bebas
+// hapus komentarnya "//" dahulu
+
+cat assets/js/page-1/index.js
+
+sudo mkdir -p assets/js/page-2
+
+sudo nano assets/js/page-2/index.js
+^ config :
+// template default
+// document.addEventListener("DOMContentLoaded", () => { }); // isi codenya bebas
+// hapus komentarnya "//" dahulu
+
+cat assets/js/page-2/index.js
+
+sudo mkdir -p assets/js/page-3
+
+sudo nano assets/js/page-3/index.js
+^ config :
+// template default
+// document.addEventListener("DOMContentLoaded", () => { }); // isi codenya bebas
+// hapus komentarnya "//" dahulu
+
+cat assets/js/page-3/index.js
+
+ls -ld assets/js/
+
+ls -l assets/js/page-1
+ls -l assets/js/page-2
+ls -l assets/js/page-3
+ls -l assets/js/
+
+ls -l assets
+
