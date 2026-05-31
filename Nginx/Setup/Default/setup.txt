@@ -11,15 +11,15 @@ sudo systemctl start nginx
 
 cd /var/www
 
-sudo mkdir -p [site] // buat base folder untuk website
+sudo mkdir -p [site] // create base folder for website
 
 sudo touch [site]/index.html
 
-sudo chown -R [user]:[user] /var/www // ubah permission "opsional"
+sudo chown -R [user]:[user] /var/www // change user permission "optional"
 
-ls -ld /var/www/ // cek permission
+ls -ld /var/www/ // check permission
 
-ls -l /var/www/ // cek daftar file permission
+ls -l /var/www/ // check file permission list
 ls -l /var/www/[site]/
 
 cd /etc/nginx/sites-available
@@ -27,8 +27,8 @@ cd /etc/nginx/sites-available
 sudo nano [site]
 ^ config :
 server {
-    listen 127.0.0.1:[port]; // default 3000 atau bebas
-    server_name [domain name]; // gunakan "_" jika belum mempunyai dns atau domain
+    listen 127.0.0.1:[port];
+    server_name [domain name]; // using symbol "_" for not using domain server
 
     root /var/www/[site];
     index index.html;
