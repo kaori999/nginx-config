@@ -6,7 +6,9 @@ sudo systemctl stop nginx // add command "2>/dev/null" if you want purge mode
 sudo systemctl reset-failed nginx
 sudo systemctl disable nginx // add command "2>/dev/null" if you want purge mode
 
+// system built-in stop command
 sudo kill [id]
 sudo kill -9 [id]
 
-sudo pkill -f [system] 
+sudo pkill -f [system]
+sudo pkill -9 [system] 
