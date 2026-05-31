@@ -1,4 +1,5 @@
 nginx config setup :
+terminal : bash
 ps aux | grep nginx
 
 // used if attach to systemd "system-path"
