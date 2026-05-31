@@ -1,4 +1,5 @@
 nginx config setup :
+terminal : bash
 cd /var/www/i2p-page
 
 cd site-i2p-[id]
