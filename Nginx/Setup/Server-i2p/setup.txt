@@ -1,4 +1,5 @@
 nginx config setup :
+terminal : bash
 cd /etc/nginx/
 
 sudo nano nginx.conf
