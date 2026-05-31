@@ -1,4 +1,5 @@
 nginx installation setup :
+terminal : bash
 sudo apt update
 sudo apt install nginx
 sudo apt install nginx-full
@@ -6,6 +7,7 @@ sudo apt install nginx-full
 apt-cache policy nginx
 
 nginx config setup :
+terminal : bash
 sudo systemctl enable nginx
 sudo systemctl start nginx
 
