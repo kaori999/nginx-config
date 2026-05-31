@@ -165,7 +165,7 @@ sudo nano assets/css/index.css
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} */
 
 cat assets/css/index.css
 
@@ -179,7 +179,7 @@ sudo nano assets/css/page-1/index.css
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} */
 
 cat assets/css/page-1/index.css
 
@@ -193,7 +193,7 @@ sudo nano assets/css/page-2/index.css
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} */
 
 cat assets/css/page-2/index.css
 
@@ -207,7 +207,7 @@ sudo nano assets/css/page-3/index.css
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} */
 
 cat assets/css/page-3/index.css
 
