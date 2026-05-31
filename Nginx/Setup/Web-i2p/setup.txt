@@ -1,4 +1,4 @@
-nginx config setup :nginx config setup :
+nginx config setup :
 cd /var/www/i2p-page
 
 cd site-i2p-[id]
