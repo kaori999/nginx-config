@@ -223,7 +223,7 @@ sudo mkdir -p assets/js
 sudo nano assets/js/index.js
 ^ config :
 // template default
-// document.addEventListener("DOMContentLoaded", () => { }); // isi codenya bebas
+// document.addEventListener("DOMContentLoaded", () => { });
 // delete the comment "//" first
 
 cat assets/js/index.js
@@ -233,7 +233,7 @@ sudo mkdir -p assets/js/page-1
 sudo nano assets/js/page-1/index.js
 ^ config :
 // template default
-// document.addEventListener("DOMContentLoaded", () => { }); // isi codenya bebas
+// document.addEventListener("DOMContentLoaded", () => { });
 // delete the comment "//" first
 
 cat assets/js/page-1/index.js
@@ -243,7 +243,7 @@ sudo mkdir -p assets/js/page-2
 sudo nano assets/js/page-2/index.js
 ^ config :
 // template default
-// document.addEventListener("DOMContentLoaded", () => { }); // isi codenya bebas
+// document.addEventListener("DOMContentLoaded", () => { });
 // delete the comment "//" first
 
 cat assets/js/page-2/index.js
@@ -253,7 +253,7 @@ sudo mkdir -p assets/js/page-3
 sudo nano assets/js/page-3/index.js
 ^ config :
 // template default
-// document.addEventListener("DOMContentLoaded", () => { }); // isi codenya bebas
+// document.addEventListener("DOMContentLoaded", () => { });
 // delete the comment "//" first
 
 cat assets/js/page-3/index.js
