@@ -1,4 +1,5 @@
 nginx config setup :
+terminal : bash
 sudo apt purge nginx
 sudo apt purge nginx-common
 sudo apt purge nginx-full
